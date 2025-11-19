@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="systemViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5Qt-iC-sAg">
+                                <rect key="frame" x="30" y="59.999999999999986" width="333" height="186.66666666666663"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EkX-Wg-cYK">
+                                <rect key="frame" x="0.0" y="305.66666666666669" width="393" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYA-1l-Dr6">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                        <connections>
+                                            <action selector="Share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deS-rh-x0U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-yf-F59">
+                                        <rect key="frame" x="102" y="0.0" width="87" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Safari"/>
+                                        <connections>
+                                            <action selector="Safari:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiP-LJ-fmq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gge-tF-Gii">
+                                        <rect key="frame" x="204" y="0.0" width="87" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Camera"/>
+                                        <connections>
+                                            <action selector="Camera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUL-KO-mD9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wH5-2e-vyb">
+                                        <rect key="frame" x="306" y="0.0" width="87" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mail"/>
+                                        <connections>
+                                            <action selector="Mail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3r-fv-5TU"/>
+                                            <action selector="Main:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FEo-8F-ISP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vg5-lJ-GRh">
+                                <rect key="frame" x="163" y="391.66666666666669" width="67" height="68.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eih-Yk-3wb">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="saveFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75b-u8-CfQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-fc-K4H">
+                                        <rect key="frame" x="0.0" y="34.333333333333314" width="67" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fetch"/>
+                                        <connections>
+                                            <action selector="fetchFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8W-Pu-cP6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Qt-iC-sAg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Orj-60-1AR"/>
+                            <constraint firstItem="vg5-lJ-GRh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PmO-Jw-Fy3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EkX-Wg-cYK" secondAttribute="trailing" id="Thg-n1-E4s"/>
+                            <constraint firstItem="vg5-lJ-GRh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UVm-oN-2Dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Qt-iC-sAg" secondAttribute="trailing" constant="30" id="cVT-3J-pJx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EkX-Wg-cYK" secondAttribute="bottom" constant="444" id="cmK-Nn-0G5"/>
+                            <constraint firstItem="EkX-Wg-cYK" firstAttribute="top" secondItem="5Qt-iC-sAg" secondAttribute="bottom" constant="59" id="h9A-op-1El"/>
+                            <constraint firstItem="EkX-Wg-cYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kv8-So-BQN"/>
+                            <constraint firstItem="5Qt-iC-sAg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="oZk-Hp-sT4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Image" destination="5Qt-iC-sAg" id="XG5-Gu-dbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="409" height="409"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
